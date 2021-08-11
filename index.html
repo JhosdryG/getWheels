@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GetWheels</title>
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <!-- SCRIPT LIBRARIES -->
+    
+    <script src="script/TweenTools/TimelineLite.min.js"></script>
+    <script src="script/TweenTools/TweenMax.min.js"></script>
+    <script src="script/TweenTools/ScrollMagic.min.js"></script>
+    <script src="script/TweenTools/animation.gsap.min.js"></script>
+
+</head>
+<body>
+    <!-- IMAGE VIEWER -->
+    <div class="imageviewer explorer" id="imageViewerBox">
+        <div id="buttonClose" class="button-close">X</div>
+        
+        <div class="viewerbox">
+            <img id="imageViewer" src="img/latest/silverado/silverado-gall-1.jpg" alt="imageviewer">
+            <div class="arrow_button_container">
+                    <div id="leftButton" class="arrow_button">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div id="rightButton" class="arrow_button">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+            </div>
+        </div>
+    </div><!-- IMAGE VIEWER -->
+    
+    <!-- HEADER -->
+    <header class="header">
+
+        <video src="video background.mp4" class="header__video" autoplay muted loop></video>
+
+        <div class="overlay header__overlay"></div>
+
+        <!-- NAVBAR -->
+        <nav class="nav">
+
+            <div class="container">
+
+                <h2 class="logo">GetWheels</h2>
+
+                <i id="menu_button" class="fas fa-ellipsis-v hide-since-tablet"></i>
+        
+                <ul id="menu" class="menu">
+                    <li class="menu__item">
+                        <a href="#latest" class="menu__link">The Lastests</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#lookBeautiful" class="menu__link">Look Beautiful</a>
+                    </li>
+                    <!-- <li class="menu__item">
+                        <a href="#weAre" class="menu__link">We Are</a>
+                    </li> -->
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">A Vehicle</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav><!-- NAVBAR -->
+
+        <div class="container titles">
+            <h1 class="header__title">We Love Cars</h1>
+            <h2 class="header__subtitle">And We Share our Love With you</h2>
+        </div>
+
+        <h3 class="header__subtext">Made by Yulymar Rubio. V-26410252!</h3>
+
+    </header><!-- HEADER -->
+
+    
+    <main>
+        <!-- THE LATEST -->
+        <section class="latests" id="latest">
+
+            <h2 class="section-title">The Lastests</h2>
+
+            <!-- EXPLORER -->
+            <article class="latest explorer">
+
+                <div class="container">
+
+                        <h3 class="latest__title title-top">Explorer 2020</h3>
+
+                        <!-- LATEST HEADER -->
+                        <div class="latest__header">
+                            
+                            <div class="latest__header__imgbox"> 
+                                <img src="img/latest/explorer/explorer-main.jpg" alt="Explorer main" class="latest__header__img">
+
+                                <div class="box"></div>
+                            </div>
+
+                            <div class="header__text">
+                                <h4 class="latest__header__title">Built for life's adventures</h4>
+                
+                                <p class="latest__header__desc">The all-new 2020 Explorer has been completely redesigned — inside, outside and under the hood. In addition to new capability enhancing features like rear-wheel drive, there are also two new available trims. Ford now offers a commanding, no-compromise Explorer Limited Hybrid as well as the most powerful Explorer to date, the all-new Explorer ST. With 400 horsepower, 415 lb.-ft. of torque and top speed of 143 mph, an ST brings the adventure to you.</p>
+                            </div>
+        
+                        </div><!-- LATEST HEADER -->
+        
+                        <!-- LATEST CHARACTERISTIC -->
+                        <div class="latest__chars">
+                            <!-- CHAR 1 -->
+                            <div class="char char-1">
+                                <div class="char__imgbox">
+                                    <div class="overlay"></div>
+                                    <img src="img/latest/explorer/explorer-char-1.jpg" alt="Explorer Characteristic 1" class="char__img">
+                                </div>
+
+                                <div class="char__text">
+                                    <h4 class="char__title">Terrain Managment System TM</h4>
+                                    <p class="char__desc">The all-new Terrain Managment System can help you tackle any adventure with up to seven Selectable Drive Modes through a single easy-to-use dial in the center console. This Includes normal, trail, deep snow/sand, slippery, sport, tow/haul and new eco mode that each come with special 3D animated graphics in the new available 12.3-Inch digital cluster.</p>
+                                </div>
+                            </div><!-- CHAR 1 -->
+
+                            <!-- CHAR 2 -->
+                            <div class="char char-2">
+                                <div class="char__imgbox">
+                                    <img src="img/latest/explorer/explorer-char-2.jpg" alt="Explorer Characteristic 2" class="char__img">
+                                    <div class="overlay"></div>
+                                </div>
+
+                                <div class="char__text">
+                                    <h4 class="char__title">Intelligent 4WD</h4>
+                                    <p class="char__desc">Keeping you on your path of discovery, available intelligent 4WD optimizes powertrain and braking systems, allowing the vehicle to deliver the right amount of traction to match the driving conditions.</p>
+                                </div>
+                            </div><!-- CHAR 2 -->
+
+                            <!-- CHAR 3 -->
+                            <div class="char char-3">
+                                <div class="char__imgbox">
+                                    <div class="overlay"></div>
+                                    <img src="img/latest/explorer/explorer-char-3.jpg" alt="Explorer Characteristic 3" class="char__img">
+                                </div>
+
+                                <div class="char__text">
+                                    <h4 class="char__title">All-New Rear-Wheel Drive</h4>
+                                    <p class="char__desc">The 2020 Explorer comes equipped with all-new rear-wheel drive to maximize performance and design. RWD architecture enables a sportier, more athletic design, improved on and off-road capability and 600 pounds more in maximun towing capacity when properly equipped.</p>
+                                </div>
+                            </div><!-- CHAR 3 -->
+
+                        </div><!-- LATEST CHARACTERISTIC -->
+        
+                        <!-- GALLERY -->
+                        <h4 class="gallery__title">Gallery</h4>
+                        <div class="latest__gallery">
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-1.jpg" alt="Explorer gallery 1" class="gallery__img" data-model="explorer" data-target="1">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-2.jpg" alt="Explorer gallery 2" class="gallery__img" data-model="explorer" data-target="2">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-3.jpg" alt="Explorer gallery 3" class="gallery__img" data-model="explorer" data-target="3">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-4.jpg" alt="Explorer gallery 4" class="gallery__img" data-model="explorer" data-target="4">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-5.jpg" alt="Explorer gallery 5" class="gallery__img" data-model="explorer" data-target="5">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-6.jpg" alt="Explorer gallery 6" class="gallery__img" data-model="explorer" data-target="6">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-7.jpg" alt="Explorer gallery 7" class="gallery__img" data-model="explorer" data-target="7">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-8.jpg" alt="Explorer gallery 8" class="gallery__img" data-model="explorer" data-target="8">
+                            </div>
+                            <div class="gallery__box">             
+                                <img src="img/latest/explorer/explorer-gall-9.jpg" alt="Explorer gallery 9" class="gallery__img" data-model="explorer" data-target="9">
+                            </div>
+                        </div><!-- GALLERY -->
+                        
+                        <!-- LATEST FOOTER -->
+                        <div class="latest__footer">
+                           <div class="overlay"></div>
+                            <p class="latest__footer__text">
+                                Know More in The Official Web Page
+                            </p>
+                            <a href="https://www.ford.com/suvs/explorer/#reversebrakeassist" target="_blank" class="latest__footer__btn">Go to Web</a>
+                        </div><!-- LATEST FOOTER -->
+                </div>
+            </article><!-- EXPLORER -->
+
+            <!-- SILVERADO -->
+            <article class="latest silverado">
+
+                <div class="container">
+
+                    <h3 class="latest__title title-top">Silverado LD</h3>
+
+                    <!-- LATEST HEADER -->
+                    <div class="latest__header">
+                            
+                        <div class="latest__header__imgbox"> 
+                            <img src="img/latest/silverado/silverado-main.jpg" alt="Silverado main" class="latest__header__img">
+
+                            <div class="box"></div>
+                        </div>
+
+                        <div class="header__text">
+                            <h4 class="latest__header__title">Made to Last</h4>
+                
+                            <p class="latest__header__desc">When you’ve got a long list of tough jobs to do, you need a pickup truck that can help you get it all done. And when you choose Silverado 1500 LD, you’re choosing the most dependable, longest-lasting full-size pickup on the road.
+                            </p>
+                        </div>
+        
+                    </div><!-- LATEST HEADER -->
+        
+                        <!-- LATEST CHARACTERISTIC -->
+                    <div class="latest__chars">
+
+                            <!-- CHAR 1 -->
+                        <div class="char char-1">
+                            <div class="char__imgbox">
+                                <div class="overlay overlay-light"></div>
+                                <img src="img/latest/silverado/silverado-char-1.jpg" alt="Silverado Characteristic 1" class="char__img">
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">Everything At your Fingertips</h4>
+                                <p class="char__desc">Available steering wheel controls to answer hands-free phone calls and manage the Chevrolet Infotainment System display and operate cruise control, Available USB ports and a 110-volt power outlet, Chevrolet Infotainment System with a 7-inch or available 8-inch diagonal color touch-screen display.</p>
+                            </div>
+                        </div><!-- CHAR 1 -->
+
+                            <!-- CHAR 2 -->
+                        <div class="char char-2">
+                            <div class="char__imgbox">
+                                <img src="img/latest/silverado/silverado-char-2.jpg" alt="Silverado Characteristic 2" class="char__img">
+                                <div class="overlay overlay-light"></div>
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">Make it Yours</h4>
+                                <p class="char__desc">With available Chevrolet Accessories for the interior, exterior, cargo bed and more, there are lots of ways to customize your Silverado LD to your needs.</p>
+                            </div>
+                        </div><!-- CHAR 2 -->
+
+                            <!-- CHAR 3 -->
+                        <div class="char char-3">
+                            <div class="char__imgbox">
+                                <div class="overlay overlay-light"></div>
+                                <img src="img/latest/silverado/silverado-char-3.jpg" alt="Silverado Characteristic 3" class="char__img">
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">Pull Some Major Weight</h4>
+                                <p class="char__desc">Built with high-strength steel, a durable pickup box and available trailering technologies, Silverado LD offers strength and durability along with the confidence you need when you’re putting 9,400 lbs. of trailering capability to work.</p>
+                            </div>
+                        </div><!-- CHAR 3 -->
+
+                    </div><!-- LATEST CHARACTERISTIC -->
+        
+                        <!-- GALLERY -->
+                    <h4 class="gallery__title">Gallery</h4>
+                    <div class="latest__gallery">
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-1.jpg" alt="Silverado gallery 1" class="gallery__img" data-model="silverado" data-target="1">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-2.jpg" alt="Silverado gallery 2" class="gallery__img" data-model="silverado" data-target="2">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-3.jpg" alt="Silverado gallery 3" class="gallery__img" data-model="silverado" data-target="3">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-4.jpg" alt="Silverado gallery 4" class="gallery__img" data-model="silverado" data-target="4">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-5.jpg" alt="Silverado gallery 5" class="gallery__img" data-model="silverado" data-target="5">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-6.jpg" alt="Silverado gallery 6" class="gallery__img" data-model="silverado" data-target="6">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-7.jpg" alt="Silverado gallery 7" class="gallery__img" data-model="silverado" data-target="7">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-8.jpg" alt="Silverado gallery 8" class="gallery__img" data-model="silverado" data-target="8">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/silverado/silverado-gall-9.jpg" alt="Silverado gallery 9" class="gallery__img" data-model="silverado" data-target="9">
+                        </div>
+                    </div><!-- GALLERY -->
+                        
+                        <!-- LATEST FOOTER -->
+                    <div class="latest__footer">
+                        <div class="overlay overlay-light"></div>
+                        <p class="latest__footer__text">
+                                Know More in The Official Web Page
+                        </p>
+                        <a href="https://www.chevrolet.com/trucks/previous-model/silverado/1500" target="_blank" class="latest__footer__btn">Go to Web</a>
+                    </div><!-- LATEST FOOTER -->
+                </div>
+            </article><!-- SILVERADO -->
+
+            <!-- CT5 -->
+            <article class="latest ct5">
+
+                <div class="container">
+
+                    <h3 class="latest__title title-top">Cadillac CT5</h3>
+
+                    <!-- LATEST HEADER -->
+                    <div class="latest__header">
+                            
+                        <div class="latest__header__imgbox"> 
+                            <img src="img/latest/ct5/ct5-main.jpg" alt="ct5 main" class="latest__header__img">
+
+                            <div class="box"></div>
+                        </div>
+
+                        <div class="header__text">
+                            <h4 class="latest__header__title">The Unreviable CT5</h4>
+                
+                            <p class="latest__header__desc">The new 2020 Cadillac CT5 has its work cut out for it. It’s no secret Cadillac’s sedan sales have been off in recent years, and with the CT5 the marque is hoping to flip that script with a car it says has class-leading features and a dramatically improved package.Designed and developed to excite. The spirited CT5 luxury sedan will make your heart race even when you’re not driving it.
+
+                            </p>
+                        </div>
+        
+                    </div><!-- LATEST HEADER -->
+        
+                        <!-- LATEST CHARACTERISTIC -->
+                    <div class="latest__chars">
+
+                            <!-- CHAR 1 -->
+                        <div class="char char-1">
+                            <div class="char__imgbox">
+                                <div class="overlay "></div>
+                                <img src="img/latest/ct5/ct5-char-1.jpg" alt="ct5 Characteristic 1" class="char__img">
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">A Touch of Elation</h4>´
+
+                                <p class="char__desc">The CT5’s driver-focused interior optimally balances comfort and control, creating a more blissful driving experience. Welcome to your new happy place.</p>
+                            </div>
+                        </div><!-- CHAR 1 -->
+
+                            <!-- CHAR 2 -->
+                        <div class="char char-2">
+                            <div class="char__imgbox">
+                                <img src="img/latest/ct5/ct5-char-2.jpg" alt="ct5 Characteristic 2" class="char__img">
+                                <div class="overlay "></div>
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">Take a Power Trip</h4>
+                                <p class="char__desc">With a refined, responsive and efficient 2.0L turbocharged 4-cylinder engine, the CT5 is in a lane all of its own. The fast lane.</p>
+                            </div>
+                        </div><!-- CHAR 2 -->
+
+                            <!-- CHAR 3 -->
+                        <div class="char char-3">
+                            <div class="char__imgbox">
+                                <div class="overlay "></div>
+                                <img src="img/latest/ct5/ct5-char-3.jpg" alt="ct5 Characteristic 3" class="char__img">
+                            </div>
+
+                            <div class="char__text">
+                                <h4 class="char__title">High-Speed, High-Tech</h4>
+                                <p class="char__desc">The CT5 features Cadillac’s latest, most advanced infotainment system† that seamlessly integrates with your lifestyle. A better driving experience has been installed.</p>
+                            </div>
+                        </div><!-- CHAR 3 -->
+
+                    </div><!-- LATEST CHARACTERISTIC -->
+        
+                        <!-- GALLERY -->
+                    <h4 class="gallery__title">Gallery</h4>
+                    <div class="latest__gallery">
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-1.jpg" alt="ct5 gallery 1" class="gallery__img" data-model="ct5" data-target="1">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-2.jpg" alt="ct5 gallery 2" class="gallery__img" data-model="ct5" data-target="2">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-3.jpg" alt="ct5 gallery 3" class="gallery__img" data-model="ct5" data-target="3">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-4.jpg" alt="ct5 gallery 4" class="gallery__img" data-model="ct5" data-target="4">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-5.jpg" alt="ct5 gallery 5" class="gallery__img" data-model="ct5" data-target="5">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-6.jpg" alt="ct5 gallery 6" class="gallery__img" data-model="ct5" data-target="6">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-7.jpg" alt="ct5 gallery 7" class="gallery__img" data-model="ct5" data-target="7">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-8.jpg" alt="ct5 gallery 8" class="gallery__img" data-model="ct5" data-target="8">
+                        </div>
+                        <div class="gallery__box">             
+                            <img src="img/latest/ct5/ct5-gall-9.jpg" alt="ct5 gallery 9" class="gallery__img" data-model="ct5" data-target="9">
+                        </div>
+                    </div><!-- GALLERY -->
+                        
+                        <!-- LATEST FOOTER -->
+                    <div class="latest__footer">
+                        <div class="overlay"></div>
+                        <p class="latest__footer__text">
+                                Know More in The Official Web Page
+                        </p>
+                        <a href="https://www.cadillac.com/future-concept-vehicles/ct5-sedan" target="_blank" class="latest__footer__btn">Go to Web</a>
+                    </div><!-- LATEST FOOTER -->
+                </div>
+            </article><!-- CT5 -->
+
+        </section><!-- THE LATESTS -->
+
+        <!-- LOOK BEAUTIFUL -->
+        <section id="lookBeautiful" class="look-beautiful">
+            <h2 class="section-title"><span>Look Beautiful</span></h2>
+            <div class="container">
+
+                <!-- BEAUTIFUL GRID -->
+                <div class="look-beautiful__grid">
+
+                    <div class="look-beautiful__grid__box cspan-2">
+                        <img src="img/look-beautiful/Aston-Martin.jpg" alt="Aston Martin" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNQ6YfW-mEWi3rRM7wOSNZ-K4IsNsw%3A1567998671560&ei=z8J1Xb7nIaiG5wKj2bWgCg&q=aston+martin+db9+2019&oq=Aston+Martin+DB9&gs_l=psy-ab.1.1.0i71l8.0.0..3050...0.1..0.0.0.......0......gws-wiz.GSEoHx673ow" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Aston Martin</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/BMW-507.jpg" alt="BMW 507" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?q=BMW+507+1956&sxsrf=ACYBGNSQFigwHmq8DQ9M6Vq0q1nVgrmPsw:1567999626389&source=lnms&sa=X&ved=0ahUKEwjBk_Tl5cLkAhXBqlkKHTvwDDQQ_AUIDCgA&biw=1640&bih=948&dpr=1" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">BMW 507</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Mustang-Gt.jpg" alt="Mustang Gt" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRUJ1iwxpjJGd36hJE7rA6T15H4tQ%3A1568000192292&ei=wMh1XeW6Eca85gLlsrjQBA&q=Mustang+Gt+2019&oq=Mustang+Gt+2019&gs_l=psy-ab.3..0l2j0i203l6j0j0i203.51.7582..7997...1.1..0.433.2813.0j12j1j1j1......0....1..gws-wiz.....10..0i71j35i362i39j35i39j0i131j0i67j0i131i67.hsxfunWWGpI&ved=0ahUKEwjlmuDz58LkAhVGnlkKHWUZDkoQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Mustang Gt</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Bugatti-Type57.jpg" alt="Bugatti Type 57" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNQ_n14d5r5ufPKuZVM0q1BQUNGD5Q%3A1567999785862&ei=Kcd1XfCbNIv65gLY0pDgAw&q=bugatti+type+57sc+atlantic&oq=Bugatti+Atlantic+1935&gs_l=psy-ab.1.1.0i71l8.0.0..8739...0.3..0.0.0.......0......gws-wiz.dM1Aob51eaY" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Buggati Type57</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Corvette.jpg" alt="Corvette" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRpE9nO7ffdA8utGdxlbn9sptna7g%3A1567999017272&ei=KcR1XfybEIrX5gK7x5pg&q=Chevrolet+Corvette+2019&oq=Chevrolet+Corvette+2019&gs_l=psy-ab.3..0l2j0i203j0l4j0i203j0j0i203.3859.6111..6394...0.2..0.173.813.0j5......0....1..gws-wiz.......0i71j0i67j0i20i263.B4O40-FNDWU&ved=0ahUKEwi81LrD48LkAhWKq1kKHbujBgwQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Corvette</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Camaro.jpg" alt="Camaro" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNSUfIppC7EEma7yONpguKOsmkH8NQ%3A1568000336277&ei=UMl1Xd69ELDH5gKE7I3IDw&q=Camaro+1977&oq=Camaro+1977&gs_l=psy-ab.3..0l3j0i203j0l4j0i203j0i22i30.259085.265015..266476...1.1..4.1118.10357.0j2j3j1j2j6j5j1......0....1..gws-wiz.....10..0i71j35i39j0i67j0i20i263j0i131j35i362i39.HEUQPweOBsY&ved=0ahUKEwjepbS46MLkAhWwo1kKHQR2A_kQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Camaro</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Lamborghini-LP710.jpg" alt="Lamborgini" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNSulMzhhwvVamdcAYrkGEvvrF6S_Q%3A1568004231525&ei=h9h1XfvVH4-W5wLnqrH4DQ&q=Lamborghini+lp+710&oq=Lamborghini+lp+710&gs_l=psy-ab.3..35i39j0i22i30.5508.6140..6517...0.2..0.416.1113.0j1j2j0j1......0....1..gws-wiz.......0i71j0i203j0j0i10i203j0i10.bYBDrMWz_Ok&ved=0ahUKEwi7tef59sLkAhUPy1kKHWdVDN8Q4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Lamborghini</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box rspan-2">
+                        <img src="img/look-beautiful/BMW-CS.jpg" alt="BMW CS" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRKbq74AMrtgnP8qzm9ybDeo5-f7Q%3A1567999152960&ei=sMR1XdGVOsOs5wKV24CQAw&q=BMW+CS+1968&oq=BMW+CS+1968&gs_l=psy-ab.3...521.1802..2300...0.0..0.0.0.......0....1..gws-wiz.GRUkUPH7Oe8&ved=0ahUKEwjRrZSE5MLkAhVD1lkKHZUtADIQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">BMW CS</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box cspan-2 lg-cspan-3">
+                        <img src="img/look-beautiful/Hummer-H2.jpg" alt="Hummer H2" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRxHGNf7vbc6GBwU1vsQjOM8u4HSQ%3A1568003796592&ei=1NZ1XfvgI83b5gK98I7QCA&q=hummer+h2+213+2019&oq=hummer+h2+213+2019&gs_l=psy-ab.3..33i22i29i30l10.2743.3395..3654...0.0..0.434.1268.0j2j2j0j1......0....1..gws-wiz.......0i22i30.zZ5wRQ5kvTA&ved=0ahUKEwj7mrWq9cLkAhXNrVkKHT24A4oQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Hummer-H2</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box">
+                        <img src="img/look-beautiful/Citroen-DS.jpg" alt="Citroen DS" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?q=Citroen+DS+1975&biw=1640&bih=948&sxsrf=ACYBGNQ8odboyp39ys5cImrQFaBk5SAf4g:1567998601741&source=lnms&sa=X&ved=0ahUKEwjVv6j94cLkAhWJtlkKHVp3DZkQ_AUIDCgA" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Citroen-DS</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box cspan-2">
+                        <img src="img/look-beautiful/Ford-Mustang.jpg" alt="Ford Mustang" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?q=.+Ford+Mustang+1964&sxsrf=ACYBGNQqoeGU0PoEYkyWoF-25TpYqbL3cg:1567998243015&source=lnms&sa=X&ved=0ahUKEwjk0aHS4MLkAhWknOAKHdtICI4Q_AUIDCgA&biw=1640&bih=948&dpr=1" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Mustang 1964</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box cspan-2">
+                        <img src="img/look-beautiful/Lincoln-Continental.jpg" alt="Licoln Continental" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRNLEVL8q0mZxYbmyFVAg3CQNlgDA%3A1567998679489&ei=18J1XZnFHYiG5wKU7LjIBQ&q=+Lincoln+Continental+1942&oq=+Lincoln+Continental+1942&gs_l=psy-ab.3..0l3j0i203l5j0j0i203.12782.20067..20343...0.1..0.556.1740.3-2j1j1......0....2j1..gws-wiz.......0i71j0i67.Zmt-6QHl9Wc&ved=0ahUKEwjZjLKi4sLkAhUIw1kKHRQ2DlkQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Lincoln Continental</p>
+                        </div>
+                    </div>
+                    <div class="look-beautiful__grid__box lg-cspan-2">
+                        <img src="img/look-beautiful/Porsche-911.jpg" alt="Porsche-911" class="box__img">
+                        <div class="box__link">
+
+                            <a href="https://www.google.com/search?biw=1640&bih=948&sxsrf=ACYBGNRw4V7V2rcJSRRpYx86LyQ60W5q3g%3A1568000018904&ei=Esh1XZ3SNqXI5gL6rLSoAg&q=Porsche+911+1989&oq=Porsche+911+1989&gs_l=psy-ab.3..0i71l8.1276.1276..1714...0.2..0.0.0.......0....1..gws-wiz.cdCLG-UzTaA&ved=0ahUKEwido4mh58LkAhUlpFkKHXoWDSUQ4dUDCAs&uact=5" target="_blank" class="box__btn">Watch More</a>
+
+                            <p class="car-name">Porsche 911</p>
+                        </div>
+                    </div>
+
+                </div><!-- BEAUTIFUL GRID -->
+            </div>
+        </section><!-- LOOK BEAUTIFUL -->
+
+        <!-- WE ARE -->
+        <!-- <section id="weAre" class="we-are">
+            <h2 class="section-title">We Are</h2>
+            <div class="we-are__titles">
+                no visible text
+                <h3 class="title">Extreme</h3>
+                <h3 class="title">Elegant</h3>
+                <h3 class="title">Classic</h3>
+                <h3 class="title">Fast</h3>
+            </div>
+            <div class="we-are__animated container">
+                <div class="we-are-box square"><video src="https://media.giphy.com/media/p3SXRdhrCGphe/giphy-tumblr.gif">Video could not be loaded</video></div>
+                <div class="we-are-box triangle"><video src="https://media.giphy.com/media/QBedX70yk4AqZgMpyH/giphy.mp4">Video could not be loaded</video></div>
+                <div class="we-are-box trapezoid"><video src="https://media.giphy.com/media/IzLJEOBtG5EY9DAzPC/giphy.mp4">Video could not be loaded</video></div>
+                <div class="we-are-box bevel"><video src="https://media.giphy.com/media/XZUDiVsJLIQ06xH9cA/giphy.mp4">Video could not be loaded</video></div>
+                <div class="we-are-box hexagon"><video src="https://media.giphy.com/media/Q7RGlyJieaYFn088WH/giphy.mp4">Video could not be loaded</video></div>
+            </div>
+        </section>WE ARE -->
+
+        <!-- A VEHICLE IS -->
+        <section id="vehicle" class="vehicle">
+            <h2 class="section-title">A Vehicle is</h2>
+            <div class="container">
+                
+                <div class="car-parts">
+                    <!-- PART ENGINE -->
+                    <div class="part part-1">
+                        <img src="img/vehicle/engine.jpg" alt="Engine" class="part__img">
+                        <div class="part__content">
+                            <h3 class="part__title">Engine</h3>
+                            <p class="part__desc">The V8 engine is arguably the best powerplant a passenger vehicle can have. This engine configuration is relatively light and compact, so it can go in the front, middle or back of the car. The V8 engine always provides a healthy amount of power, torque and performance. It is the best unit for powering sports cars. Besides the performance, a V8 can produce a lot of torque, which is crucial for trucks and other working vehicles.</p>
+                            <a href="#" class="part__btn" target="_blank">Read Article</a>
+                        </div>
+                    </div><!-- PART ENGINE -->
+
+                    <!-- PART UPHOLSTERY -->
+                    <div class="part part-2">
+                        <img src="img/vehicle/upholstery.jpg" alt="Upholstery" class="part__img">
+                        <div class="part__content">
+                            <h3 class="part__title">Upholstery</h3>
+                            <p class="part__desc">The car upholstery will bring in a huge change to the overall beauty of the car interiors. If the upholstery you choose compliments the overall looks of the vehicle, it will gift you with a splendid ride. The vehicle irrespective of its price, make, and features will look stunningly beautiful if you have classy interiors. The dashboards are also extremely important when it comes to keeping the interiors of the vehicle tidy and elegant.</p>
+                            <a href="#" class="part__btn" target="_blank">Read Article</a>
+                        </div>
+                    </div><!-- PART UPHOLSTERY -->
+
+                    <!-- PART WHEELS -->
+                    <div class="part part-3">
+                        <img src="img/vehicle/wheels.jpg" alt="Wheels" class="part__img">
+                        <div class="part__content">
+                            <h3 class="part__title">Wheels</h3>
+                            <p class="part__desc">Getting the proper ratio of wheel-to-car is one of the top missions for a car designer. It can make or break the entire design. But once that sweet spot is found — what then? Do you just slap any old wheel on there and call it a day? Not a chance: rim design is almost as important as any other aspect of the car. The rims have to match the spirit of the design in theme, performance or character — or, preferably, all three at once. It should be no surprise, then, that some of the most iconic cars to ever hit the road have the most incredible sets of wheels to match.</p>
+                            <a href="#" class="part__btn" target="_blank">Read Article</a>
+                        </div>
+                    </div><!-- PART WHEELS -->
+
+                    <!-- PART SOUND -->
+                    <div class="part part-4">
+                        <img src="img/vehicle/sound.jpg" alt="Sound" class="part__img">
+                        <div class="part__content">
+                            <h3 class="part__title">Sound</h3>
+                            <p class="part__desc">A car can be a great place to enjoy music, but many commuters still put up with marginal sound quality that they'd never tolerate at home. Others assemble sophisticated sound systems for their cars, then make common installation mistakes that keep the system from reaching its full potential.</p>
+                            <a href="#" class="part__btn" target="_blank">Read Article</a>
+                        </div>
+                    </div> <!-- PART SOUND -->
+
+                </div>
+
+            </div>
+        </section><!-- A VEHICLE IS -->
+
+        <!-- GET NEWS -->
+        <section class="get-news">
+            <h2 class="section-title">Get News</h2>
+            <form class="form container">
+
+                <!-- GROUP NAME -->
+                <div class="form__group">
+                    <label for="name" class="form__group__label">
+                        Name:
+                    </label>
+                    <input id="name" type="text" class="form__group__input">
+                </div><!-- GROUP NAME -->
+
+                <!-- GROUP LASTNAME -->
+                <div class="form__group">
+                    <label for="lastName" class="form__group__label">
+                        Lastname:
+                    </label>
+                    <input id="lastName" type="text" class="form__group__input">
+                </div><!-- GROUP LASTNAME -->
+
+                <!-- GROUP EMAIL -->
+                <div class="form__group">
+                    <label for="email" class="form__group__label">
+                        Email:
+                    </label>
+                    <input id="email" type="text" class="form__group__input">
+                </div><!-- GROUP EMAIL -->
+
+                <!-- GROUP BRANDS -->
+                <div class="form__group">
+                        <label for="brands-select" class="form__group__label">
+                                Select your Favorites Brands:
+                        </label>
+                    <select name="brands" id="brands-select" class="form__group__select">
+                        <option value="Ford">Ford</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Maseratti">Maseratti</option>
+                    </select>
+                </div><!-- GROUP BRANDS -->
+
+                <!-- GROUP SUGGETIONS -->
+                <div class="form__group full">
+                    <label for="suggest" class="form__group__label">
+                        Suggestions:
+                    </label>
+                    <textarea name="suggest" id="suggest" class="textarea"></textarea>
+                </div><!-- GROUP SUGGETIONS -->
+
+                <!-- GROUP SUBMIT -->
+                <div class="form__group full">
+                    <input type="submit" value="Send me News" class="form__group__submit">
+                </div> <!-- GROUP SUBMIT -->
+
+            </form>
+        </section><!-- GET NEWS -->
+                           
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__group">
+                <h3 class="footer__group__title">About Us</h3>
+                <p class="footer__group__para">Lorem ipsum dolor sit amet.</p>
+                <p class="footer__group__para">Lorem ipsum dolor sit amet.</p>
+                <p class="footer__group__para">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="footer__group">
+                <h3 class="footer__group__title">Follow Us</h3>
+                <p class="footer__group__para">
+                    <i class="fab fa-twitter"></i> 
+                    Twitter
+                </p>
+                <p class="footer__group__para">
+                    <i class="fab fa-facebook-square"></i>
+                     Facebook
+                </p>
+                <p class="footer__group__para">
+                    <i class="fab fa-instagram"></i>
+                     Instagram
+                </p>
+            </div>
+            <div class="footer__group">
+                <h3 class="footer__group__title">Made By</h3>
+                <p class="footer__group__para">Yulymar Rubio</p>
+                <p class="footer__group__para">v.-26.410.252</p>
+                <p class="footer__group__para">yulybazan16@gmail.com</p>
+                <p class="footer__group__para">Whatsapp: +58 424 6569601</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menu = document.getElementById('menu');
+        const menuButton = document.getElementById('menu_button');
+
+        menuButton.addEventListener('click',function(){
+            menu.classList.toggle('menu-visible');
+        });
+    </script>
+
+    <script src="script/gallery.js"></script>
+    <script src="script/tweens.js"></script>
+    
+
+</body>
+</html>
